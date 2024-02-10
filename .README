@@ -1,1 +1,10 @@
 rcfe ------------ basico funcion
+BACKEN DJANGO
+- crear venv entorno:
+    python -m venv venv
+- desplegar el backen:
+    python manage.py runserver
+
+FRONTEND REACT
+- desplegar:
+    npm run dev
