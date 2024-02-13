@@ -4,6 +4,6 @@ from rest_framework import routers
 from tareas import views
 
 router = routers.DefaultRouter()
-router.register('tareas/api/v1/', views.TareasVistas, 'tareas')
+router.register('tareas/api/v1', views.TareasVistas, 'tareas')
 
 urlpatterns = router.urls
