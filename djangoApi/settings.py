@@ -87,9 +87,14 @@ WSGI_APPLICATION = 'djangoApi.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(        # Feel free to alter this value to suit your needs.        
-    default='sqlite:///db.sqlite3',        
-    conn_max_age=600    )
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'CrudTareas',
+        'USER': 'postgres',
+        'PASSWORD': 'Pultimavez',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
 }
 
 
